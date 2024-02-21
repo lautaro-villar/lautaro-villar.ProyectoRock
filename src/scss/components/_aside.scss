@@ -1,0 +1,43 @@
+aside {
+
+    .logo-sumo-2 {
+        width: 200px;
+        height: 200px;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ56OVhVGAgBEpfudIGPTIEVa76P2oJ66C6oD6Ty5Owtmq-MpRsz7478DVA8PJMjAI44o&usqp=CAU);
+        border-radius: 50%;
+        margin: 60px 30px 30px 0px;
+    }
+
+    .descripcion {
+        color: whitesmoke;
+    }
+
+    .titulo-discos {
+        border: solid 1px rgb(255, 255, 255);
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: whitesmoke;
+    }
+
+    @media all and (max-width:610px) {
+        .titulo-padre {
+            margin-top: 100px;
+            padding: 60px;
+        }
+
+        hr {
+            display: none;
+        }
+
+    }
+
+    .titulo-historia {
+        color: whitesmoke;
+    }
+
+    @media all and (max-width:606px) {
+        .titulo-discos {
+            border: none;
+        }
+    }
+}

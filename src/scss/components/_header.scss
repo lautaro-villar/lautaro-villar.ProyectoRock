@@ -1,0 +1,119 @@
+header {
+  height: 290px;
+  padding: 1% 1% 1% 1%;
+  background-color: black;
+  margin-bottom: -75px;
+  /*header nav*/
+}
+
+header a:hover {
+  background-color: rgb(218, 0, 0);
+  border-radius: 50px;
+}
+
+.Logo-sumo-1 {
+  width: 50px;
+  height: 65px;
+}
+
+.navegacion {
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content:space-between;
+  margin-top: 100px;
+}
+
+@media all and (max-width: 610px) {
+  .menu-responsive {
+    padding: 50px;
+    margin: -50px;
+    display: grid;
+    grid-template-areas: "primer-boton" "segundo-boton" "tercer-boton" "cuarto-boton" "quinto-boton";
+    height: 10px;
+    width: 100%;
+  }
+}
+
+.botones {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 2px whitesmoke;
+  border-bottom: blue;
+  border-right: blue;
+  border-top: blue;
+}
+
+/*primer a quinto boton*/
+.primer-boton {
+  grid-area: primer-boton;
+}
+
+.segundo-boton {
+  grid-area: segundo-boton;
+}
+
+.tercer-boton {
+  grid-area: tercer-boton;
+}
+
+.cuarto-boton {
+  grid-area: cuarto-boton;
+}
+
+.quinto-boton {
+  grid-area: quinto-boton;
+}
+
+/*primer a quinto boton hover*/
+.primer-boton:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1.3s;
+  color:
+    /* white*/
+    black;
+}
+
+.segundo-boton:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1.3s;
+  color:
+    /*white*/
+    black;
+}
+
+.tercer-boton:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1.3s;
+  color:
+    /*white*/
+    black;
+}
+
+.cuarto-boton:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1.3s;
+  color:
+    /*white*/
+    black;
+}
+
+.quinto-boton:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1.3s;
+  color:
+    /*white*/
+    black;
+}
+
+/*primer a quinto boton hover*/

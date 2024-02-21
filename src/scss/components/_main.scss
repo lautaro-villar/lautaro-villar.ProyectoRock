@@ -1,0 +1,89 @@
+.caja-padre{
+    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    border: solid 1px rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*discos*/
+/*primer-disco*/
+
+.primer-disco {
+    border: solid 1px whitesmoke;
+}
+
+.imagen-dividos-por-la-felicidad {
+    width: 200px;
+}
+
+.imagen-dividos-por-la-felicidad-transicion:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+/*primer-disco*/
+
+/*segundo-disco*/
+.segundo-disco {
+    border: solid 1px whitesmoke;
+}
+
+.imagen-llegando-los-monos {
+    width: 200px;
+}
+
+.imagen-llegando-los-monos-transicion:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+/*segundo-disco*/
+
+/*tercer-disco*/
+.tercer-disco {
+    border: solid 1px whitesmoke;
+}
+
+.imagen-after-chabon {
+    width: 200px;
+}
+
+.imagen-after-chabon-transicion:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+/*tercer-disco*/
+
+/*media-queris-discos*/
+@media all and (max-width:610px) {
+    .caja-padre {
+        display: grid;
+        grid-template-areas:
+            "primer-disco"
+            "segundo-disco"
+            "tercer-disco";
+    }
+
+    @media all and (max-width:451px) {
+        .primer-disco {
+            grid-area: primer-disco;
+        }
+
+        .segundo-disco {
+            grid-area: segundo-disco;
+        }
+
+        .tercer-disco {
+            grid-area: tercer-disco;
+        }
+        /*media-queris-discos*/
+        /*discos*/
+    }
+    
+}
+
