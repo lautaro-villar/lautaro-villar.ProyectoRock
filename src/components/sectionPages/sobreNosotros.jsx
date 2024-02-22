@@ -1,7 +1,11 @@
 import React from 'react'
+
 import Header from '../componentsLayaout/header'
 import Footer from '../componentsLayaout/footer'
+
 import nosotrosImage from '../../media/nosotros.jpg'
+
+import Text from '../homeComponent/text'
 
 const sobreNosotros = () => {
   return (
@@ -11,7 +15,7 @@ const sobreNosotros = () => {
 
       <hr />
 
-      <h1 class="titulo-padre">Bienvenidos!</h1>
+      <h1 className="titulo-padre">Bienvenidos!</h1>
 
       <main>
 
@@ -19,17 +23,17 @@ const sobreNosotros = () => {
 
         <aside>
 
-          <div class="imagen-aside">
+          <div className="imagen-aside">
 
-            <img src={nosotrosImage} class="logo-sumo-2" alt="banda-sumo" />
+            <img src={nosotrosImage} className="logo-sumo-2" alt="banda-sumo" />
 
-            <h2 class="titulo-historia">Quienes somos?</h2>
+            <h2 className="titulo-historia">Quienes somos?</h2>
 
           </div>
 
           <div className="descripcion">
-
-            <p>Nosotros somos la pagina oficial de sumo, una institucion sin fines de lucro que tiene como objetivo rememorar este historico grupo, aqui encontraras todo lo que quieres saber sobre ellos, una banda inactiva pero que sigue presente en nuestros corazones</p>
+           
+           <Text category="textSectionPages" section="sobreNosotros" textKey="text1" /> 
 
             <p>"#LucaNOTdead</p>
             <p>"#Dividos? </p>
