@@ -1,94 +1,64 @@
-.caja-padre{
+.caja-padre {
     border: solid 1px rgb(255, 255, 255);
+    border-radius: 10px;
     background-color: rgb(0, 0, 0);
     color: whitesmoke;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto;
-    border: solid 1px rgb(255, 255, 255);
+    grid-template-columns: repeat(3, 1fr); // Divide el espacio en 3 columnas iguales.
+    grid-template-areas:
+        "titulo titulo titulo" // Usa el espacio de las 3 columnas para el título.
+        "primer-disco segundo-disco tercer-disco"; // Define las áreas para cada disco.
     text-align: center;
+    margin: 20px 300px;
+    gap: 20px; // Añade un espacio de 20px entre los elementos de la grid.
+    padding: 20px; // Añade un espacio de 20px alrededor de los bordes internos de la caja padre.
 }
 
-/*discos*/
-/*primer-disco*/
+.titulo-discos {
+    grid-area: titulo; // Asigna el área del título al elemento.
+    padding: 5px;
+}
 
-.primer-disco {
-    border: solid 1px whitesmoke;
+.titulo-disco {
+    margin-bottom: 20px; // Asegura un espaciado consistente hacia el contenido debajo del título.
     margin-top: 20px;
 }
 
- .textoConEspacio {
-     margin-top: 20px;
-   }
-  
-.imagen-dividos-por-la-felicidad {
-    width: 200px;
-}
-
-.imagen-dividos-por-la-felicidad-transicion:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 1.5s;
-}
-/*primer-disco*/
-
-/*segundo-disco*/
-.segundo-disco {
+.primer-disco, .segundo-disco, .tercer-disco {
     border: solid 1px whitesmoke;
+    border-radius: 10px;
+    // Elimina los márgenes individuales para utilizar el gap de la grid.
 }
 
-.imagen-llegando-los-monos {
-    width: 200px;
+.textoConEspacio {
+    margin: 20px;
 }
 
-.imagen-llegando-los-monos-transicion:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 1.5s;
-}
-/*segundo-disco*/
-
-/*tercer-disco*/
-.tercer-disco {
-    border: solid 1px whitesmoke;
-}
-
+.imagen-dividos-por-la-felicidad,
+.imagen-llegando-los-monos,
 .imagen-after-chabon {
     width: 200px;
+    margin: auto; // Centra la imagen dentro de su contenedor.
 }
 
+.imagen-dividos-por-la-felicidad-transicion:hover,
+.imagen-llegando-los-monos-transicion:hover,
 .imagen-after-chabon-transicion:hover {
     transform: scale(1.1);
     transition-property: all;
     transition-duration: 1.5s;
 }
-/*tercer-disco*/
 
-/*media-queris-discos*/
+/* Media queries para pantallas más pequeñas */
 @media all and (max-width:610px) {
     .caja-padre {
-        display: grid;
+        grid-template-columns: 1fr; // Usa una sola columna
         grid-template-areas:
+            "titulo"
             "primer-disco"
             "segundo-disco"
             "tercer-disco";
+        padding: 20px; // Mantiene el espacio alrededor de los bordes internos también en móviles.
     }
-
-    @media all and (max-width:451px) {
-        .primer-disco {
-            grid-area: primer-disco;
-        }
-
-        .segundo-disco {
-            grid-area: segundo-disco;
-        }
-
-        .tercer-disco {
-            grid-area: tercer-disco;
-        }
-        /*media-queris-discos*/
-        /*discos*/
-    }
-    
 }
-

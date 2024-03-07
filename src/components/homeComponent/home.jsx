@@ -5,6 +5,8 @@ import Footer from '../componentsLayaout/footer'
 
 import Text from './text';
 
+import Chart from '../componentsLayaout/chartComponent/chart';
+
 const Home = () => {
     return (
         <div className='home'>
@@ -15,7 +17,7 @@ const Home = () => {
             <aside>
 
                 <hr />
-                <h1 className="titulo-padre">Bienvenidos a la pagina oficial de Sumo</h1>
+                <h1 className="titulo-padre"> Sumo </h1>
                 <hr />
 
 
@@ -27,48 +29,44 @@ const Home = () => {
 
                 <div className="descripcion">
 
-                    <Text category="home" section="textHomeInicio" textKey="texto1"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto1" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto2"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto2" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto3"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto3" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto4"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto4" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto5"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto5" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto6"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto6" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto7"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto7" />
 
-                    <Text category="home" section="textHomeInicio" textKey="texto8"/>
+                    <Text category="home" section="textHomeInicio" textKey="texto8" />
 
                 </div >
-
-                <br />
-
-                <h2 className="titulo-discos">Sus tres discos</h2>
-
 
             </aside >
 
 
             <main className="caja-padre">
 
+                <h2 className="titulo-discos">Sus tres discos</h2>
 
                 <div className="primer-disco" >
 
-                    <h4>
+                    <h4 className='titulo-disco'>
 
                         Divididos por la felicidad
 
                     </h4>
 
-                    <br />
+
 
                     <a href="https://open.spotify.com/album/0iMPnRq7PL82Zrah0gTQBR" target="_blank"> <img src="./src/media/divididos-por-la-felicidad.jpg" alt="divididos-por-la-felicidad" className="imagen-dividos-por-la-felicidad imagen-dividos-por-la-felicidad-transicion" /></a>
 
-                    <br />
+
 
 
                     <div className="textoConEspacio">
@@ -83,17 +81,17 @@ const Home = () => {
 
                 <div className="segundo-disco">
 
-                    <h4>
+                    <h4 className='titulo-disco'>
 
                         Llegando los monos
 
                     </h4>
 
-                    <br />
+
 
                     <a href="https://open.spotify.com/album/2kn0EF90FuahMHtPpwVsX4" target="_blank"><img src="./src/media/llegando-los-monos.jpg" alt="llegando-los-monos" className="imagen-llegando-los-monos imagen-llegando-los-monos-transicion" /></a>
 
-                    <br />
+
 
                     <div className="textoConEspacio">
 
@@ -105,17 +103,17 @@ const Home = () => {
 
                 <div className="tercer-disco">
 
-                    <h4>
+                    <h4 className='titulo-disco'>
 
                         After chabon
 
                     </h4>
 
-                    <br />
+
 
                     <a href="https://open.spotify.com/album/721cIV4PIWZSK5nZaYPvFy" target="_blank"> <img src="./src/media/descarga (2).jpg" alt="after-chabon" className="imagen-after-chabon imagen-after-chabon-transicion" /></a>
 
-                    <br />
+
 
                     <div className="textoConEspacio">
 
@@ -128,6 +126,8 @@ const Home = () => {
                 </div >
 
             </main >
+
+            <Chart />
 
             <Footer />
 
