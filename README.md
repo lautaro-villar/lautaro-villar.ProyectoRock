@@ -1,8 +1,8 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1> Pasos para actualizar: </h1>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1) git add. 
+2) git status (para ver si es git push origin 'main' o 'branch') va a decir asi: Your branch is up to date with 'origin/main'.
+3) git commit -m "comentario respecto un cambio que deba hacer o modificar/eliminar"
+4) git push origin main
